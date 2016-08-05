@@ -1,0 +1,584 @@
+/* Custom Stylesheet */
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+html{
+   background: #fff;
+ }
+*,
+body{
+  font-family: 'Roboto', "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #212121;
+}
+a,
+#archive a,
+.post-content a,
+#recommend a,
+#relation a,
+footer .container a{
+  color: #ff80ab;
+}
+a:hover,
+#archive a:hover,
+.post-content a:hover,
+#recommend a:hover,
+#relation a:hover,
+footer .container a:hover{
+  color: #212121;
+}
+.btn:hover,
+.btn-small:hover,
+.btn-large:hover{
+  color: #fff;
+}
+nav {
+  height: 56px;
+  line-height: 56px;
+}
+
+p {
+  line-height: 2rem;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+strong {
+  font-weight: 700;
+}
+/*
+# 便利系
+*/
+.img-blur{
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -ms-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+}
+.img-grayscale{
+     -webkit-filter: grayscale(80%);
+     -moz-filter: grayscale(80%);
+     -o-filter: grayscale(80%);
+     -ms-filter: grayscale(80%);
+     filter: grayscale(80%);
+}
+/*
+# breadcrumb
+*/
+#breadcrumb{
+	color:#fff;
+	-webkit-text-shadow: -0px 1px 3px #212121;
+	text-shadow: 2px 2px 0 #212121;
+}
+#breadcrumb li{
+  padding: 2px;
+}
+#breadcrumb a{
+	color:#fff;
+  font-weight: bold;
+}
+
+/*#
+# Form
+# */
+/* label underline focus color */
+.input-field input[type=text],
+.input-field input[type=email],
+.input-field textarea.materialize-textarea {
+ border-bottom: 1px solid #c0c0c0;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field .prefix:focus,
+.input-field textarea.materialize-textarea:focus{
+ border-bottom: 1px solid #ff80ab;
+ box-shadow: none;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #ffd600;
+  box-shadow: none;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid #fff;
+ box-shadow: 0 1px 0 0 #fff;
+}
+/* icon prefix focus color */
+.input-field > .icon_prefix
+.input-field > .prefix.active,
+.input-field > .active i {
+ color: #ff80ab;
+}
+[type="checkbox"].filled-in:checked + label:after {
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff80ab;
+  background-color: #ff80ab;
+  z-index: 0;
+}
+.input-field img{
+  display: block;
+  width: 16px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.button-collapse {
+  color: #ff80ab;
+}
+
+/*
+# Section hタグ
+*/
+section h1{font-size: 2rem;}
+section h2{
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+section h3{
+  color: #424242;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  font-weight: 700;
+}
+section .slider h3{
+  color: #fff;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  font-weight: 700;
+}
+section h4{font-size: 1.4rem;}
+section h5{font-size: 1.2rem;}
+section h6{font-size: 1rem;}
+
+/*
+# Material Parallax
+*/
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  width: 100%;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+  .parallax-height480{
+    height: 480px;
+  }
+  .parallax > img {
+    width: auto;
+    height: auto;
+  }
+
+
+/* Slider */
+.slider ul.slides{
+  background: rgba(33,33,33,.1);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #f06292;
+}
+/*
+# Component: top Small boxes
+*/
+.small-box {
+  position: relative;
+  display: block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.small-box > .inner {
+  padding: 10px;
+}
+.small-box > .small-box-footer {
+  position: relative;
+  text-align: center;
+  padding: 3px 0;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+.small-box > .small-box-footer:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.15);
+}
+.small-box h3 {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  white-space: nowrap;
+  padding: 0;
+}
+.small-box p {
+  font-size: 15px;
+}
+.small-box p > small {
+  display: block;
+  color: #f9f9f9;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.small-box h3,
+.small-box p {
+  z-index: 5px;
+}
+.small-box .icon {
+  position: absolute;
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+  z-index: 0;
+  font-size: 90px;
+  color: rgba(0, 0, 0, 0.15);
+}
+.small-box:hover {
+  text-decoration: none;
+  color: #212121;
+}
+.small-box:hover .icon {
+  animation-name: tansformAnimation;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: tansformAnimation;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: tansformAnimation;
+  -moz-animation-duration: .5s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: forwards;
+}
+@keyframes tansformAnimation {
+  from {
+    font-size: 90px;
+  }
+  to {
+    font-size: 100px;
+  }
+}
+@-webkit-keyframes tansformAnimation {
+  from {
+    font-size: 90px;
+  }
+  to {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .small-box {
+    text-align: center;
+  }
+  .small-box .icon {
+    display: none;
+  }
+  .small-box p {
+    font-size: 12px;
+  }
+}
+#news {}
+#instafeed img{
+  padding: 5px;
+	border: 1px solid #f5f5f5;
+}
+/*
+# アーカイブ部
+*/
+#archive .card-title{
+  font-weight: 500;
+}
+/*
+# 記事投稿部
+*/
+.post-contant{
+  font-size: 1.1rem;
+}
+.post-content p{
+  color: #212121;
+}
+
+#post-article h2:first-letter{
+  border-bottom:rgba(255,128,171,1) .3rem solid;
+}
+#post-article h3:first-letter{
+  border-bottom:rgba(255,128,171,.8) .3rem solid;
+}
+#post-article h4:first-letter{
+  border-bottom:rgba(255,128,171,.6) .3rem solid;
+}
+#post-article h5:first-letter{
+  border-bottom:rgba(255,128,171,.4) .3rem solid;
+}
+#post-article ol{
+  margin: 1rem 0 0 2rem;
+  padding: 0;
+}
+#post-article ol>li{
+  line-height: 1.75;
+}
+#post-article ol>li>ol {
+  list-style-type: none;
+  margin: 0 0 0 1rem;
+}
+#post-article ol>li span { /* For IE6/7. */
+  margin: 0 5px 0 -25px;
+}
+#post-article ul{
+  margin: 1rem 0 0 2rem;
+}
+#post-article .collection{
+  margin: 1rem 0 0 0;
+}
+#post-article ul>li{
+  list-style: disc;
+  line-height: 1.75;
+}
+#post-article li>ul{
+  margin: 0;
+}
+#post-article li>ul>li {
+  list-style-type: none;
+}
+#post-article li>ul>li:before {
+  content: ' - ';
+}
+#post-article u{
+  text-decoration:none;
+  background: -moz-linear-gradient(transparent 60%,#fff176 0%);      /* Firefox用 */
+  background: -webkit-linear-gradient(transparent 60%,#fff176 0%);   /* Safari用 */
+  background: -ms-linear-gradient(transparent 60%,#fff176 0%);       /* IE用 */
+  background: -o-linear-gradient(transparent 60%,#fff176 0%);        /* Opera用 */
+  background: linear-gradient(transparent 60%,#fff176 0%);           /* Default */
+}
+/* table */
+#post-article .price th{
+  vertical-align: top;
+  width: 30%;
+}
+#post-article .price td{
+  vertical-align: top;
+  text-align: right;
+}
+#post-article .listing th{
+  vertical-align: top;
+  width: 30%;
+}
+#post-article .listing td{
+  vertical-align: top;
+}
+  /*
+  ## in_category > creator
+  */
+  #creator-top{
+    margin-top: -8rem;
+  }
+  /*
+  ## #post-service
+  */
+  #post-service h3{
+    font-weight: bold;
+  }
+/*
+# Amazon link
+*/
+#post-article .amazon-box {
+  background: ;
+}
+#post-article .amazon-image  {
+  float: left;
+  margin: 0px 15px 10px 0px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+#post-article .amazon-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+  line-height: 175%;
+}
+#post-article  .amazon-manufacturer {
+  color: #212121;
+  margin-bottom: 5px;
+}
+#post-article .amazon-description{
+  color: #212121;
+  margin-top: 7px;
+}
+#post-article .booklink-footer {
+  clear: left;
+}
+
+/*
+# more-infomations
+*/
+#more-infomations h1 a,
+#more-infomations h2 a,
+#more-infomations h3 a{
+  color: #212121;
+}
+
+/*
+# pagination
+*/
+.pagination{
+  color: #fff;
+  position: relative;
+}
+.pagination .prev,
+.pagination .next{
+  font-size: .9rem;
+}
+/*
+# Comment
+*/
+.comment-lists-wrap {
+}
+
+.comment-lists-wrap ol {
+    list-style-position: inside;
+}
+
+.comment-lists-wrap ol li{
+     overflow: hidden;
+}
+
+.comment-lists-wrap ol li.even{　/* コメントグループの区切り */
+     border-bottom: 1px solid #F9003C;
+}
+
+.comment-lists-wrap ol .comment {
+}
+.comment-lists-wrap ol .children { /* 返信コメントの部分 */
+     margin-left: 10%;
+}
+
+.reply{/* 返信ボタン */
+
+}
+
+.reply a {
+
+}
+
+.comment-author{/* アバター */
+     width:15%;
+     float: left;
+     overflow: hidden;
+}
+
+.comment-author img{
+     display: block;
+     width: 52px;
+     height: auto;
+     margin: 0 auto;
+}
+
+span.says{/* コメント投稿者の「より」を非表示 */
+     display: none;
+}
+
+.comment-body{
+     clear: both;
+     margin-top: 2%;
+     overflow: hidden;
+}
+
+.comment-body p{/* 文章部分 */
+     overflow: hidden;
+     padding:2%;
+     margin: 0 0 2% 0!important;
+}
+
+.fn {/* コメント投稿者の名前の部分（デフォルトではイタリックになってる部分） */
+    display: block;
+    font-style: normal;
+    clear: both;
+    text-align: center;
+}
+.comment-meta{/* コメント投稿日 */
+     text-align: right;
+}
+
+.comment-meta a{
+     color: #626262;
+}
+/*
+# footer
+*/
+footer .container{
+  color: #212121;
+  border-top: #e0e0e0 1px solid;
+}
+#footer-categories li {
+  border: none;
+  margin: 0 0 .75rem 0;
+  padding: 0;
+}
+#footer-categories li>ul {
+  margin-left: 1rem;
+  padding: 0;
+}
+footer .photostream{
+  border: #212121 2px solid;
+}
+
+@media only screen and (min-width : 601px) {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 56px;
+    line-height: 56px; }
+  .navbar-fixed {
+    height: 56px; }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

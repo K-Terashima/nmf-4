@@ -1,0 +1,17 @@
+
+
+/* フォントを指定するクラス */
+body.mceContentBody {
+	font: 13px/1.6 "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+.editor-area a {
+	color: #339933;
+	text-decoration: underline;
+}
+.editor-area h3 {
+	padding: 3px 13px 6px;
+	font-size: 116%;
+	color: #666666;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #CCCCCC;
+}
